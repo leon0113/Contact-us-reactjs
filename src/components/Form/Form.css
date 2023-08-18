@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.top_btn{
+    display: flex;
+    gap: 32px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
