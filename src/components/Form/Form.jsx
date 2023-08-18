@@ -20,10 +20,21 @@ const Form = () => {
                 />
 
                 {/* form section  */}
-                <form action="">
+                <form>
                     <div className="form_container">
                         <label htmlFor="name">Name</label>
                         <input type="text" name='name' />
+                    </div>
+                    <div className="form_container">
+                        <label htmlFor="email">Email</label>
+                        <input type="text" name='email' />
+                    </div>
+                    <div className="form_container">
+                        <label htmlFor="text">Text</label>
+                        <textarea type="text" name='text' rows="10" />
+                    </div>
+                    <div className='submit_btn'>
+                        <Button text='SUBMIT' />
                     </div>
                 </form>
             </div>
@@ -32,7 +43,7 @@ const Form = () => {
 
             {/* images section  */}
             <div className='image'>
-
+                <img src="/images/Service 24_7-pana 1.svg" alt="" />
             </div>
         </section>
     );

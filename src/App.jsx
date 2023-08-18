@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <ContactUs />
-      <Form />
+      <main className='main_container'>
+        <ContactUs />
+        <Form />
+      </main>
     </>
   )
 }
