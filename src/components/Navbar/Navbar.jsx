@@ -1,14 +1,14 @@
-
+import './Navbar.css'
 const Navbar = () => {
     return (
-        <nav>
+        <nav className='container'>
             <div className="logo">
                 <img src="/images/logo.png" alt="Logo" />
             </div>
             <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Contact</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     );
