@@ -1,10 +1,10 @@
 import styles from './Button.module.css';
 
-const Button = (props) => {
+const Button = ({ isSecondary, icon, text, ...rest }) => {
     return (
-        <button className={props.isSecondary ? styles.secondary_btn : styles.primary_btn}>
-            {props.icon}
-            {props.text}
+        <button {...rest} className={isSecondary ? styles.secondary_btn : styles.primary_btn}>
+            {icon}
+            {text}
         </button>
     );
 };

@@ -27,6 +27,16 @@
 .form_container input{
     height: 40px;
     padding: 0 18px;
+    color: rgb(53, 49, 49);
+    font-size: large;
+    font-weight: 500;
+}
+
+.form_container textarea{
+    padding: 18px 18px;
+    color: rgb(53, 49, 49);
+    font-size: large;
+    font-weight: 700;
 }
 
 .form_container label{

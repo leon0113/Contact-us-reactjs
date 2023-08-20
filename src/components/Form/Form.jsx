@@ -3,8 +3,22 @@ import './Form.css';
 import { MdMessage } from 'react-icons/md';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
+import { useState } from 'react';
 
 const Form = () => {
+
+    const [name, setName] = useState(' ')
+    const [email, setEmail] = useState(' ');
+    const [text, setText] = useState(' ')
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+
+        setName(event.target[0].value);
+        setEmail(event.target[1].value);
+        setText(event.target[2].value);
+    }
+
     return (
         <section className='content'>
             {/* button section  */}
@@ -20,7 +34,7 @@ const Form = () => {
                 />
 
                 {/* form section  */}
-                <form>
+                <form onSubmit={onSubmit}>
                     <div className="form_container">
                         <label htmlFor="name">Name</label>
                         <input type="text" name='name' />
@@ -35,6 +49,11 @@ const Form = () => {
                     </div>
                     <div className='submit_btn'>
                         <Button text='SUBMIT' />
+                    </div>
+                    <div>
+                        {
+                            name + " " + email + " " + text
+                        }
                     </div>
                 </form>
             </div>
