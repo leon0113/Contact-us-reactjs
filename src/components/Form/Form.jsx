@@ -51,9 +51,11 @@ const Form = () => {
                         <Button text='SUBMIT' />
                     </div>
                     <div>
-                        {
-                            name + " " + email + " " + text
-                        }
+                        <p>{`Name: ${name}`}</p>
+
+                        <p>{`Email: ${email}`}</p>
+
+                        <p>{`Text: ${text}`}</p>
                     </div>
                 </form>
             </div>
