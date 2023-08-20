@@ -18,4 +18,5 @@ body{
     flex-direction: column;
     height: calc(90vh - 72px);
     justify-content: end;
+    margin-top: 80px;
 }
